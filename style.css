@@ -398,6 +398,7 @@ footer .column > a:hover {
   .features .card {
     text-align: center;
     width: 60%;
+
     margin: auto;
   }
   .pricing {
@@ -421,6 +422,15 @@ footer .column > a:hover {
   .fas,
   .ri-bug-line {
     font-size: 1.2rem;
+  }
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features .card {
+    text-align: center;
+    width: 60%;
+
+    margin: auto;
   }
   html,
   body {
