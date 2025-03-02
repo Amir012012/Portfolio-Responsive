@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Playwrite IT Moderna", sans-serif;
+  background-color: #252529;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-logo {
+  max-width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #1d4ed8;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1d4ed8;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
+}
+
+header {
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4 {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .content h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 4rem;
+  font-size: 3rem;
+}
+
+header .content h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p {
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+header .image {
+  position: relative;
+}
+
+header .image::before {
+  content: "o";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #1d4ed8;
+  transform: translateX(-50%);
+  font-size: 38rem;
+  font-weight: 400;
+  line-height: 20rem;
+  opacity: 0.2;
+  z-index: -100;
+}
+
+header .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header {
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card {
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+.features .card span {
+  display: inline-block;
+  background-color: #1e40af;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.features .card a:hover {
+  color: #1e40af;
+}
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.pricing {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing .card {
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.pricing .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing .card h3 {
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+  color: #e60000;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.pricing .card button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #e60000;
+}
+
+.pricing .card button:hover {
+  background-color: #4502029e;
+  border-color: #944444;
+}
+
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+footer .column .logo {
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .column .socials a {
+  color: #ccc;
+  border: 3px solid #ccc;
+  padding: 8px 10px;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+footer .column .socials .youtube:hover {
+  color: #fff;
+  background-color: #850b0b;
+  border-color: #850b0b;
+}
+footer .column .socials .insta:hover {
+  color: #fff;
+  background-color: #930c83;
+  border-color: #930c83;
+}
+footer .column .socials .git:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+footer .column h4 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .column > a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > a:hover {
+  color: #1d4ed8;
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .image {
+    grid-area: 1/1/2/2;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+/* کل نوار اسکرول */
+::-webkit-scrollbar {
+  width: 8px; /* عرض نوار اسکرول */
+  height: 8px; /* برای اسکرول افقی */
+}
+
+/* پس‌زمینه نوار اسکرول */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* رنگ پس‌زمینه */
+  border-radius: 10px; /* گوشه‌های گرد */
+}
+
+/* بخش متحرک (دسته اسکرول) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0b4684, #8b0202); /* رنگ دسته */
+  border-radius: 10px; /* گرد کردن دسته */
+}
+
+@media (width < 600px) {
+  header .image::before {
+    display: none;
+  }
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features .card {
+    text-align: center;
+    width: 60%;
+    height: 250px;
+    margin: auto;
+  }
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: auto;
+  }
+  .sub-header {
+    margin-bottom: 30px;
+  }
+  footer {
+    grid-template-columns: 1fr 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnb {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .fas,
+  .ri-bug-line {
+    font-size: 1.2rem;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
